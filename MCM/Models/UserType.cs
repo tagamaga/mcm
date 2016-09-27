@@ -1,18 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace MCM.Models
 {
-    public enum UserTypeCode
-    {
-        ADM, MEM
-    }
-    public enum UserTypeName
-    {
-        Administrator, Member
-    }
     public class UserType
     {
         public int UserTypeID { get; set; }
