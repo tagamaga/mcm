@@ -6,11 +6,11 @@ namespace MCM.Models
     public class City
     {
         public int CityID { get; set; }
-        public int RegionID { get; set; }
         public string CityCode { get; set; }
         public string CityName { get; set; }
         public bool CityActive { get; set; }
 
-        public virtual ICollection<Region> Regions { get; set; }
+        public int RegionID { get; set; }
+        public virtual Region Regions { get; set; }
     }
 }

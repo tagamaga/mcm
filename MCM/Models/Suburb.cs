@@ -11,6 +11,6 @@ namespace MCM.Models
         public string SuburbName { get; set; }
         public bool SuburbActive { get; set; }
 
-        public virtual ICollection<Area> Areas { get; set; }
+        public virtual Area Areas { get; set; }
     }
 }

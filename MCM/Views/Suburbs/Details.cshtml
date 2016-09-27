@@ -1,0 +1,50 @@
+﻿@model MCM.Models.Suburb
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Suburb</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Areas.AreaCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Areas.AreaCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SuburbCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SuburbCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SuburbName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SuburbName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SuburbActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SuburbActive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SuburbID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

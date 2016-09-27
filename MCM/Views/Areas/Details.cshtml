@@ -1,0 +1,58 @@
+﻿@model MCM.Models.Area
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Area</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cities.CityCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cities.CityCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostalCodes.PostalCodeID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostalCodes.PostalCodeID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AreaCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AreaCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AreaName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AreaName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AreaActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AreaActive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AreaID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

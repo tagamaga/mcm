@@ -12,7 +12,7 @@ namespace MCM.Models
         public string UserPassword { get; set; }
         public bool UserActive { get; set; }
 
-        public virtual ICollection<UserType> UserTypes { get; set; }
+        public virtual UserType UserTypes { get; set; }
 
     }
 }

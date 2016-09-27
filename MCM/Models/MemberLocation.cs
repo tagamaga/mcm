@@ -5,11 +5,11 @@ namespace MCM.Models
 {
     public class MemberLocation
     {
-        public int mLocationID { get; set; }
+        public int MemberLocationID { get; set; }
         public int MemberID { get; set; }
         public int RegionID { get; set; }
 
-        public virtual ICollection<Member> Members { get; set; }
-        public virtual ICollection<Region> Regions { get; set; }
+        public virtual Member Members { get; set; }
+        public virtual Region Regions { get; set; }
     }
 }
