@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MCM.Models
 {
     public class PostalCode
     {
-        public int pCodeID { get; set; }
-        public string pCode { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int PostalCodeID { get; set; }
+        public bool PostalCodeActive { get; set; }
     }
 }
