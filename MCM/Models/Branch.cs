@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace MCM.Models
 {
@@ -15,7 +13,7 @@ namespace MCM.Models
         public string BranchInfo { get; set; }
         public bool BranchActive { get; set; }
 
-        public virtual ICollection<Bank> Banks { get; set; }
-        public virtual ICollection<Area> Areas { get; set; }
+        public virtual Bank Banks { get; set; }
+        public virtual Area Areas { get; set; }
     }
 }

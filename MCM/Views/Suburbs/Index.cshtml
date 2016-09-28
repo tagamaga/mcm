@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MCM.Models.Suburb>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Areas.AreaCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SuburbCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SuburbName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SuburbActive)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Areas.AreaCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SuburbCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SuburbName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SuburbActive)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SuburbID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SuburbID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SuburbID })
+        </td>
+    </tr>
+}
+
+</table>

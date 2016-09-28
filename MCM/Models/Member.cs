@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace MCM.Models
 {
@@ -15,6 +13,6 @@ namespace MCM.Models
         public string EmailAddress { get; set;  }
         public bool MemberActive { get; set; }
 
-        public virtual ICollection<User> Users { get; set; }
+        public virtual User Users { get; set; }
     }
 }

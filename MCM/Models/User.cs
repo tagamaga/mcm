@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace MCM.Models
 {
@@ -11,10 +9,10 @@ namespace MCM.Models
         public int UserTypeID { get; set; }
         public string UserFname { get; set; }
         public string UserLname { get; set; }
-        public string Password { get; set; }
+        public string UserPassword { get; set; }
         public bool UserActive { get; set; }
 
-        public virtual ICollection<UserType> UserTypes { get; set; }
+        public virtual UserType UserTypes { get; set; }
 
     }
 }

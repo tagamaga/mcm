@@ -1,0 +1,42 @@
+﻿@model MCM.Models.Region
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Region</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RegionCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegionCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegionActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegionActive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RegionID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
