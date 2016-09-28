@@ -21,5 +21,6 @@ namespace MCM.DAL
         public DbSet<Region> Regions { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UserType> UserTypes { get; set; }
+        public DbSet<UserType> Pledge { get; set; }
     }
 }
